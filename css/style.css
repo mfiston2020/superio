@@ -185,11 +185,12 @@ p,
 }
 
 .auto-container {
-  position: static;
+  position: relative;
   max-width: 1310px;
   padding: 0px 15px;
   margin: 0 auto;
   width: 100%;
+  top: -18px;
 }
 
 .small-container {
@@ -2602,7 +2603,7 @@ Main Header
   left: 0;
   top: 0;
   width: 100%;
-  height: auto;
+  height: 90px;
   z-index: 99;
   -webkit-transition: all 300ms ease;
   -o-transition: all 300ms ease;
@@ -2624,7 +2625,9 @@ Main Header
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+.main-header.fixed-header .auto-container {
+  margin-top: 10px;
+}
 .main-header.fixed-header .logo {
   padding: 15px 0;
 }
