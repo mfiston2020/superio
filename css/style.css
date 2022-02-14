@@ -7412,7 +7412,7 @@ Job Detail Section
   background-position: center;
   background-size: cover;
   background-size: cover;
-  padding: 80px 0 70px;
+  padding: 180px 0 70px;
 }
 
 .job-detail-section.style-three .upper-box {
@@ -8700,7 +8700,7 @@ Testimonial Section Three
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color: #34a853;
+  color: #123a8f;
   margin-bottom: 20px;
 }
 
@@ -8757,9 +8757,9 @@ Testimonial Section Three
 .testimonial-section-three .owl-next,
 .testimonial-section-three .owl-prev {
   position: relative;
-  background: rgba(52, 168, 83, 0.15);
+  background: rgb(112 155 228 / 34%);
   border-radius: 8px;
-  color: #34a853;
+  color: #123a8f;
   height: 50px;
   width: 50px;
   line-height: 50px;
@@ -10745,7 +10745,7 @@ Candidate Detail Section
   background-position: center;
   background-size: cover;
   background-size: cover;
-  padding: 80px 0 30px;
+  padding: 180px 0 30px;
 }
 
 .candidate-detail-section.style-three .upper-box {
@@ -16312,12 +16312,12 @@ Login Section
 }
 
 .social-btn-two.facebook-btn {
-  border-color: #3b5998;
-  color: #3b5998;
+  border-color: #0077b5;
+  color: #0077b5;
 }
 
 .social-btn-two.facebook-btn:hover {
-  background-color: #3b5998;
+  background-color: #0077b5;
   color: #ffffff;
 }
 

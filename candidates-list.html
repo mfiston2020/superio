@@ -52,10 +52,10 @@
                     <a href="job-list.html"> <span>Find Jobs</span></a>
                   </li>
 
-                  <li class="current">
+                  <li class="">
                     <a href="employers-list.html"> <span>Employers</span></a>
                   </li>
-                  <li class="">
+                  <li class="current">
                     <a href="candidates-list.html"> <span>Candidates</span></a>
                   </li>
                   <li class="">
@@ -139,42 +139,12 @@
       <!--Page Title-->
       <section class="page-title">
         <div class="auto-container">
-          <!-- Job Search Form -->
-          <div class="job-search-form">
-            <form method="post" action="">
-              <div class="row">
-                <!-- Form Group -->
-                <div class="form-group col-lg-10 col-md-12 col-sm-12">
-                  <span class="icon flaticon-search-1"></span>
-                  <input
-                    type="text"
-                    name="field_name"
-                    placeholder="Job title, keywords, or company"
-                  />
-                </div>
-
-                <!-- Form Group -->
-                <div class="form-group col-lg-2 col-md-12 col-sm-12 text-right">
-                  <button type="submit" class="theme-btn btn-style-one">
-                    Find Jobs
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-          <!-- Job Search Form -->
-
-          <div class="top-filters">
-            <div class="form-group">
-              <select class="chosen-select">
-                <option>Filter By</option>
-                <option>Freelance</option>
-                <option>Full Time</option>
-                <option>Internship</option>
-                <option>Part Time</option>
-                <option>Temporary</option>
-              </select>
-            </div>
+          <div class="title-outer">
+            <h1>Showing All Resumes</h1>
+            <ul class="page-breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li>Resumes</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -186,8 +156,154 @@
           <div class="filters-backdrop"></div>
 
           <div class="row">
+            <!-- Filters Column -->
+            <div class="filters-column col-lg-4 col-md-12 col-sm-12">
+              <div class="inner-column pd-right">
+                <div class="filters-outer">
+                  <button type="button" class="theme-btn close-filters">
+                    X
+                  </button>
+
+                  <!-- Filter Block -->
+                  <div class="filter-block">
+                    <h4>Search by Keywords</h4>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="listing-search"
+                        placeholder="Job title, keywords, or company"
+                      />
+                      <span class="icon flaticon-search-3"></span>
+                    </div>
+                  </div>
+
+                  <!-- Filter Block -->
+                  <div class="filter-block">
+                    <h4 class="text-center">Experience</h4>
+                    <div class="range-slider-one">
+                      <div class="area-range-slider"></div>
+                      <div class="input-outer">
+                        <div class="amount-outer">
+                          <span class="area-amount"></span>Yrs
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Filter Block -->
+                  <div class="filter-block">
+                    <h4>Category</h4>
+                    <div class="form-group">
+                      <select class="chosen-select">
+                        <option>Choose a category</option>
+                        <option>Back-end</option>
+                        <option>Front-End</option>
+                        <option>Ui-Ux Designer</option>
+                        <option>Content Developer</option>
+                      </select>
+                      <span class="icon flaticon-briefcase"></span>
+                    </div>
+                  </div>
+
+                  <!-- Switchbox Outer -->
+                  <div class="switchbox-outer">
+                    <h4 class="text-center">Opportunity Type</h4>
+                    <ul class="switchbox">
+                      <li>
+                        <label class="switch">
+                          <input type="checkbox" checked />
+                          <span class="slider round"></span>
+                          <span class="title">Job</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider round"></span>
+                          <span class="title">Vacancies</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider round"></span>
+                          <span class="title">Internship</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider round"></span>
+                          <span class="title">training</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider round"></span>
+                          <span class="title">Bootcamp</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider round"></span>
+                          <span class="title">Career Guidance</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Filter Block -->
+                  <div class="filter-block">
+                    <h4>Candidate Gender</h4>
+                    <div class="form-group">
+                      <select class="chosen-select">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                      </select>
+                      <span class="icon flaticon-man"></span>
+                    </div>
+                  </div>
+
+                  <!-- Checkboxes Ouer -->
+                  <div class="checkbox-outer">
+                    <h4>Education Levels</h4>
+                    <ul class="checkboxes square">
+                      <li>
+                        <input id="check-a" type="checkbox" name="check" />
+                        <label for="check-a">Certificate</label>
+                      </li>
+                      <li>
+                        <input id="check-b" type="checkbox" name="check" />
+                        <label for="check-b">Diploma</label>
+                      </li>
+                      <li>
+                        <input id="check-c" type="checkbox" name="check" />
+                        <label for="check-c">Associate Degree</label>
+                      </li>
+                      <li>
+                        <input id="check-d" type="checkbox" name="check" />
+                        <label for="check-d">Bachelor Degree</label>
+                      </li>
+                      <li>
+                        <input id="check-e" type="checkbox" name="check" />
+                        <label for="check-e">Master’s Degree</label>
+                      </li>
+                      <li class="mb-5">
+                        <button class="view-more">
+                          <span class="icon flaticon-plus"></span> View More
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Content Column -->
-            <div class="content-column col-lg-12 col-md-12 col-sm-12">
+            <div class="content-column col-lg-8 col-md-12 col-sm-12">
               <div class="ls-outer">
                 <button
                   type="button"
@@ -201,7 +317,7 @@
                   <div class="showing-result">
                     <div class="text">
                       Showing <strong>41-60</strong> of
-                      <strong>944</strong> employer
+                      <strong>944</strong> jobs
                     </div>
                   </div>
                   <div class="sort-by">
@@ -225,130 +341,88 @@
                   </div>
                 </div>
 
-                <div class="row">
-                  <!-- Company Block Four -->
-                  <div
-                    class="company-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
-                  >
-                    <div class="inner-box">
-                      <button class="bookmark-btn">
-                        <span class="flaticon-bookmark"></span>
-                      </button>
-                      <span class="featured">Featured</span>
-                      <span class="company-logo"
-                        ><img src="images/resource/company-logo/6-1.png" alt=""
-                      /></span>
-                      <h4><a href="employers-single.html">Netflix</a></h4>
-                      <ul class="job-info">
+                <!-- Candidate block three -->
+                <div class="candidate-block-three">
+                  <div class="inner-box">
+                    <div class="content">
+                      <figure class="image">
+                        <img src="images/resource/candidate-1.png" alt="" />
+                      </figure>
+                      <h4 class="name"><a href="#">Darlene Robertson</a></h4>
+                      <ul class="candidate-info">
+                        <li class="designation">UI Designer</li>
                         <li>
                           <span class="icon flaticon-map-locator"></span>
                           London, UK
                         </li>
                         <li>
-                          <span class="icon flaticon-briefcase"></span>
-                          Accounting / Finance
+                          <span class="icon flaticon-money"></span> $99 / hour
                         </li>
                       </ul>
-                      <div class="job-type">Open Jobs – 2</div>
+                      <ul class="post-tags">
+                        <li><a href="#">App</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Digital</a></li>
+                      </ul>
                     </div>
-                  </div>
-
-                  <!-- Company Block Four -->
-                  <div
-                    class="company-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
-                  >
-                    <div class="inner-box">
+                    <div class="btn-box">
                       <button class="bookmark-btn">
                         <span class="flaticon-bookmark"></span>
                       </button>
-                      <span class="featured">Featured</span>
-                      <span class="company-logo"
-                        ><img src="images/resource/company-logo/6-2.png" alt=""
-                      /></span>
-                      <h4><a href="employers-single.html">Opendoor</a></h4>
-                      <ul class="job-info">
-                        <li>
-                          <span class="icon flaticon-map-locator"></span>
-                          London, UK
-                        </li>
-                        <li>
-                          <span class="icon flaticon-briefcase"></span>
-                          Accounting / Finance
-                        </li>
-                      </ul>
-                      <div class="job-type">Open Jobs – 2</div>
-                    </div>
-                  </div>
-
-                  <!-- Company Block Four -->
-                  <div
-                    class="company-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
-                  >
-                    <div class="inner-box">
-                      <button class="bookmark-btn">
-                        <span class="flaticon-bookmark"></span>
-                      </button>
-                      <span class="featured">Featured</span>
-                      <span class="company-logo"
-                        ><img src="images/resource/company-logo/6-3.png" alt=""
-                      /></span>
-                      <h4><a href="employers-single.html">Checkr</a></h4>
-                      <ul class="job-info">
-                        <li>
-                          <span class="icon flaticon-map-locator"></span>
-                          London, UK
-                        </li>
-                        <li>
-                          <span class="icon flaticon-briefcase"></span>
-                          Accounting / Finance
-                        </li>
-                      </ul>
-                      <div class="job-type">Open Jobs – 2</div>
-                    </div>
-                  </div>
-
-                  <!-- Company Block Four -->
-                  <div
-                    class="company-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
-                  >
-                    <div class="inner-box">
-                      <button class="bookmark-btn">
-                        <span class="flaticon-bookmark"></span>
-                      </button>
-                      <span class="featured">Featured</span>
-                      <span class="company-logo"
-                        ><img src="images/resource/company-logo/6-4.png" alt=""
-                      /></span>
-                      <h4><a href="employers-single.html">Mural</a></h4>
-                      <ul class="job-info">
-                        <li>
-                          <span class="icon flaticon-map-locator"></span>
-                          London, UK
-                        </li>
-                        <li>
-                          <span class="icon flaticon-briefcase"></span>
-                          Accounting / Finance
-                        </li>
-                      </ul>
-                      <div class="job-type">Open Jobs – 2</div>
+                      <a
+                        href="candidates-single.html"
+                        class="theme-btn btn-style-three"
+                        ><span class="btn-title">View Profile</span></a
+                      >
                     </div>
                   </div>
                 </div>
 
-                <!-- Pagination -->
-                <nav class="ls-pagination">
-                  <ul>
-                    <li class="prev">
-                      <a href="#"><i class="fa fa-arrow-left"></i></a>
-                    </li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#" class="current-page">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li class="next">
-                      <a href="#"><i class="fa fa-arrow-right"></i></a>
-                    </li>
-                  </ul>
-                </nav>
+                <!-- Candidate block three -->
+                <div class="candidate-block-three">
+                  <div class="inner-box">
+                    <div class="content">
+                      <figure class="image">
+                        <img src="images/resource/candidate-2.png" alt="" />
+                      </figure>
+                      <h4 class="name"><a href="#">Wade Warren</a></h4>
+                      <ul class="candidate-info">
+                        <li class="designation">UI Designer</li>
+                        <li>
+                          <span class="icon flaticon-map-locator"></span>
+                          London, UK
+                        </li>
+                        <li>
+                          <span class="icon flaticon-money"></span> $99 / hour
+                        </li>
+                      </ul>
+                      <ul class="post-tags">
+                        <li><a href="#">App</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Digital</a></li>
+                      </ul>
+                    </div>
+                    <div class="btn-box">
+                      <button class="bookmark-btn">
+                        <span class="flaticon-bookmark"></span>
+                      </button>
+                      <a
+                        href="candidates-single.html"
+                        class="theme-btn btn-style-three"
+                        ><span class="btn-title">View Profile</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Listing Show More -->
+                <div class="ls-show-more">
+                  <p>Showing 36 of 497 Jobs</p>
+                  <div class="bar">
+                    <span class="bar-inner" style="width: 40%"></span>
+                  </div>
+                  <button class="show-more">Show More</button>
+                </div>
               </div>
             </div>
           </div>
@@ -481,5 +555,5 @@
     <script src="js/script.js"></script>
   </body>
 
-  <!-- Mirrored from creativelayers.net/themes/superio/employers-list-v3.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Dec 2021 05:36:02 GMT -->
+  <!-- Mirrored from creativelayers.net/themes/superio/candidates-list-v1.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Dec 2021 05:36:06 GMT -->
 </html>
