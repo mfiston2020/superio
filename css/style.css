@@ -2283,10 +2283,10 @@ Preloader
 
 .preloader:after {
   position: absolute;
-  left: 46%;
-  top: 40%;
-  height: 150px;
-  width: 150px;
+  left: 50%;
+  top: 50%;
+  height: 50px;
+  width: 50px;
   margin-left: -25px;
   margin-top: -25px;
   background-position: center center;
@@ -8633,7 +8633,102 @@ Testimonial Section Two
   width: 100%;
   bottom: 38px;
 }
+/*** 
 
+====================================================================
+team
+====================================================================
+
+***/
+.team-wrap {
+  text-align: center;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  background: #f8f8f8;
+}
+.team-wrap .team-info {
+  padding: 25px 10px;
+}
+.team-wrap h4 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.team-wrap h4 a {
+  color: #1b1d21;
+}
+.team-wrap span {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #797979;
+}
+.team-wrap .team-thumb {
+  position: relative;
+}
+.team-wrap .team-social {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.team-wrap .team-social > div {
+  padding: 3px 10px;
+  width: 20%;
+  position: relative;
+  left: 160px;
+  background: #2853a4;
+  transform: translateX(100%);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+}
+.team-wrap .team-social a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  margin: 20px 0;
+}
+.team-wrap .team-social a:hover {
+  color: #43baff;
+}
+.team-wrap:hover {
+  background: #fff;
+  box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+}
+/* .team-wrap:hover .team-social > div {
+  transform: translateX(2);
+} */
+
+.member-info {
+  list-style: none;
+  font-size: 18px;
+  padding-left: 0;
+}
+.member-info li {
+  padding-bottom: 10px;
+}
+
+.member-form {
+  padding: 40px 50px;
+}
+.member-form h2 {
+  margin-bottom: 5px;
+}
+.member-form input[type="text"],
+.member-form input[type="email"] {
+  width: 100%;
+}
 /*** 
 
 ====================================================================
