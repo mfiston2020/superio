@@ -8679,11 +8679,15 @@ team
   justify-content: flex-end;
   overflow: hidden;
 }
+.row-with-margin {
+  position: relative;
+  left: 25%;
+}
 .team-wrap .team-social > div {
   padding: 3px 10px;
   width: 20%;
   position: relative;
-  left: 160px;
+  left: 153px;
   background: #2853a4;
   transform: translateX(100%);
   transition: all 0.3s linear;

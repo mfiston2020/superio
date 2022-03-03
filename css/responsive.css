@@ -1267,7 +1267,25 @@
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .row-with-margin {
+    left: 0;
+  }
+  .team-wrap .team-social > div {
+    left: 190px;
+  }
+}
 @media only screen and (max-width: 767px) {
+  .row-with-margin {
+    left: 0;
+  }
+  .team-wrap .team-social > div {
+    left: 350px;
+    width: 10%;
+  }
+  .main-footer .logo img {
+    margin-top: 135px;
+  }
   .job-search-form {
     min-width: auto;
   }
