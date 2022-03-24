@@ -15920,9 +15920,7 @@ Subscribe Section
 .subscribe-section {
   position: relative;
   padding: 60px 0;
-  background-image: url("../images/background/1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+
 }
 
 .subscribe-section .outer-box {
