@@ -2293,7 +2293,7 @@ Preloader
   margin-top: -25px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url(../images/favicon.png);
+  background-image: url(../images/favicon.webp);
   content: "";
 }
 
@@ -2648,6 +2648,7 @@ Main Header
   padding: 0 60px;
   max-width: 1920px;
   margin: 0 auto;
+  top: 10px;
 }
 
 .main-header .nav-outer {
@@ -3027,7 +3028,10 @@ Main Header
 .main-header.header-style-two.fixed-header {
   background-color: #22218c;
 }
-
+.main-header.header-style-two.fixed-header .main-box {
+  position: relative;
+  top: -1px;
+}
 .main-header.header-shaddow {
   -webkit-box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
   box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
@@ -3225,231 +3229,8 @@ Header Style Two
 .header-style-two .main-menu .navigation > li > ul:before {
   border-bottom-color: #fff;
 }
-
 /*** 
-
-====================================================================
-Header Style Three
-====================================================================
-
-***/
-
-.header-style-three .main-box {
-  padding: 0 45px;
-}
-
-.header-style-three .upload-cv,
-.header-style-three .main-menu .navigation > li > ul > li > a:hover,
-.header-style-three .main-menu .navigation > li > ul > li > span:hover,
-.header-style-three .main-menu .navigation > li > ul > li > a:hover,
-.header-style-three .main-menu .navigation > li > ul > li > ul > li > a:hover,
-.header-style-three
-  .main-menu
-  .navigation
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > span:hover,
-.header-style-three
-  .main-menu
-  .navigation
-  > li
-  .mega-menu-bar
-  .column
-  > ul
-  > li
-  > a:hover,
-.header-style-three .main-menu .navigation > li.current.dropdown > span:after,
-.header-style-three .main-menu .navigation > li > ul > li > ul > li.current > a,
-.header-style-three .main-menu .navigation > li > ul > li.current > a,
-.header-style-three .main-menu .navigation > li.current.dropdown > span:after,
-.header-style-three .main-menu .navigation > li.current > a,
-.header-style-three .main-menu .navigation > li.current > span {
-  color: #34a853;
-}
-
-.header-style-three .main-menu .navigation > li > ul > li > ul,
-.header-style-three .main-menu .navigation > li > .mega-menu,
-.header-style-three .main-menu .navigation > li > ul {
-  border-top-color: #34a853;
-}
-
-.header-style-three .main-menu .navigation > li > .mega-menu:before,
-.header-style-three .main-menu .navigation > li > ul:before {
-  border-bottom-color: #34a853;
-}
-
-/*** 
-
-====================================================================
-Header Style Four
-====================================================================
-
-***/
-
-.header-style-four .nav-outer {
-  width: 100%;
-}
-
-.header-style-four .main-menu {
-  margin-left: auto;
-  margin-right: 15px;
-}
-
-.header-style-four .main-menu .navigation > li {
-  margin-left: 45px;
-  margin-right: 0;
-}
-
-.header-style-four .main-menu .navigation > li.dropdown > span:after,
-.header-style-four .main-menu .navigation > li > span,
-.header-style-four .main-menu .navigation > li > a {
-  color: #ffffff;
-}
-
-.header-style-four .upload-cv,
-.header-style-four .main-menu .navigation > li > ul > li > a:hover,
-.header-style-four .main-menu .navigation > li > ul > li > span:hover,
-.header-style-four .main-menu .navigation > li > ul > li > a:hover,
-.header-style-four .main-menu .navigation > li > ul > li > ul > li > a:hover,
-.header-style-four .main-menu .navigation > li > ul > li > ul > li > span:hover,
-.header-style-four
-  .main-menu
-  .navigation
-  > li
-  .mega-menu-bar
-  .column
-  > ul
-  > li
-  > a:hover,
-.header-style-four .main-menu .navigation > li > ul > li > ul > li.current > a,
-.header-style-four .main-menu .navigation > li > ul > li.current > a {
-  color: #d93025;
-}
-
-.header-style-four .main-menu .navigation > li > ul > li > ul,
-.header-style-four .main-menu .navigation > li > .mega-menu,
-.header-style-four .main-menu .navigation > li > ul {
-  border-top-color: #d93025;
-}
-
-.header-style-four .main-menu .navigation > li > .mega-menu:before,
-.header-style-four .main-menu .navigation > li > ul:before {
-  border-bottom-color: #d93025;
-}
-
-.header-style-four .btn-style-five {
-  color: #202124;
-}
-
-.header-style-four .btn-style-five:hover {
-  color: #ffffff;
-}
-
-.header-style-four.fixed-header {
-  background: #262c3f;
-}
-
-/*** 
-
-====================================================================
-Header Style Five
-====================================================================
-
-***/
-
-.header-style-five {
-}
-
-.header-style-five .logo-box {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.header-style-five .logo {
-  padding: 25px 0;
-}
-
-.header-style-five .outer-box {
-  padding: 25px 0;
-}
-
-.header-style-five.fixed-header .outer-box {
-  padding: 15px 0;
-}
-
-.header-style-five.fixed-header .logo {
-  padding: 10px 0;
-  -webkit-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-
-/*** 
-
-====================================================================
-Sticky Header
-====================================================================
-
-***/
-
-.sticky-header {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  padding: 0px 0px;
-  z-index: 99;
-  background: rgba(255, 255, 255, 0.952941);
-  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-
-.sticky-header.fixed-header {
-  opacity: 1;
-  z-index: 99;
-  visibility: visible;
-}
-
-.sticky-header .main-box {
-  padding: 0;
-  margin: 0;
-}
-
-.sticky-header .logo,
-.sticky-header .outer-box,
-.sticky-header .main-box:before {
-  display: none;
-}
-
-.sticky-header .sticky-logo {
-  display: block;
-}
-
-.sticky-header .main-menu .navigation > li.dropdown > span:after,
-.sticky-header .main-menu .navigation > li.dropdown > span,
-.sticky-header .main-menu .navigation > li.dropdown > a:after,
-.sticky-header .main-menu .navigation > li > a {
-  color: #363636;
-}
-
-.sticky-header .main-menu .navigation > li.current.dropdown > span:after,
-.sticky-header .main-menu .navigation > li.current > span,
-.sticky-header .main-menu .navigation > li.current.dropdown > a:after,
-.sticky-header .main-menu .navigation > li.current > a {
-  color: #1967d2;
-}
+  
 
 /*** 
 
@@ -3863,261 +3644,6 @@ Mobile Header
 /*** 
 
 ====================================================================
-Login Popup
-====================================================================
-
-***/
-
-.jquery-modal {
-  z-index: 999;
-}
-
-.modal {
-  height: auto;
-  padding: 0;
-  max-width: 500px;
-  overflow: visible;
-  background: none;
-  -webkit-box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
-  box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
-  border-radius: 8px;
-}
-
-.blocker {
-  background: rgba(32, 33, 36, 0.5);
-}
-
-#login-modal {
-  max-width: 500px;
-  padding: 30px 40px 20px;
-  overflow: visible;
-  background: #fff;
-  border-radius: 8px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-#login-modal .social-btn-two {
-  padding: 10px 20px;
-}
-
-.login-from {
-  position: relative;
-  text-align: center;
-  background: #fff;
-}
-
-.login-from h3 {
-  position: relative;
-  display: block;
-  font-size: 20px;
-  color: #1b2032;
-  font-weight: 700;
-  line-height: 1.2em;
-  margin-bottom: 20px;
-}
-
-.login-from .form-group {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 18px;
-}
-
-.login-from .form-group .text,
-.login-from .form-group .forgot-pass,
-.login-from .form-group label {
-  font-size: 14px;
-  color: #5c5c5c;
-  line-height: 1em;
-  margin: 0;
-}
-
-.login-from .form-group label {
-  cursor: pointer;
-}
-
-.login-from .form-group .forgot-pass:hover {
-  text-decoration: underline;
-}
-
-.login-from .form-group input[type="text"],
-.login-from .form-group input[type="email"],
-.login-from .form-group input[type="password"],
-.login-from .form-group input[type="url"],
-.login-from .form-group select,
-.login-from .form-group textarea {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 54px;
-  font-size: 14px;
-  color: #5c6770;
-  line-height: 30px;
-  font-weight: 400;
-  background: #ffffff;
-  border: 2px solid #e6e8ed;
-  padding: 10px 20px;
-  border-radius: 8px;
-  -webkit-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-
-.login-from .form-group input[type="submit"],
-.login-from .form-group button {
-  width: 100%;
-  min-width: auto;
-}
-
-.login-from .form-group .text {
-  width: 100%;
-}
-
-.login-from .form-group .social-btn {
-  margin-right: 30px;
-  width: 100%;
-}
-
-.login-from .form-group .social-btn:last-child {
-  margin-right: 0;
-}
-
-.social-btn {
-  position: relative;
-  text-align: center;
-  white-space: nowrap;
-  color: inherit;
-  font-size: 16px;
-  border-radius: 5px;
-  background-color: inherit;
-  font-weight: 700;
-  padding: 10px 30px;
-  color: #ffffff;
-  line-height: 25px;
-}
-
-.social-btn span {
-  margin-right: 3px;
-}
-
-.social-btn.facebook-btn {
-  background-color: #3b5998;
-  color: #ffffff;
-}
-
-.social-btn.google-btn {
-  background-color: #dc4d28;
-  color: #ffffff;
-}
-
-.login-from .bottom-text {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.login-from .signup-link {
-  position: relative;
-  display: inline-block;
-  font-size: 14px;
-  color: #021f4a;
-}
-
-.login-from .signup-link:hover {
-  text-decoration: underline;
-}
-
-.login-from.register .form-group.full-width {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: left;
-  margin-bottom: 8px;
-}
-
-.login-from.register .checkbox-wrap {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 10px;
-  white-space: nowrap;
-}
-
-.login-from.register .checkbox-wrap label {
-  margin-left: 10px;
-}
-
-.login-from.register .checkbox-wrap label a {
-  color: #ef2f24;
-}
-
-.login-from.register .checkbox-wrap label a:hover {
-  text-decoration: underline;
-}
-
-#login-modal .login-form h3 {
-  text-align: center;
-}
-
-.modal a.close-modal {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  right: 10px;
-  top: 10px;
-  background: #f0f5f7;
-  border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #f0f5f7;
-  text-indent: 0;
-  font-size: 0;
-}
-
-.modal a.close-modal:before {
-  font-family: Flaticon;
-  content: "\f175";
-  position: relative;
-  font-size: 12px;
-  color: #000;
-  width: 40px;
-  font-weight: 700;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-/*** 
-
-====================================================================
 Page Title
 ====================================================================
 
@@ -4139,7 +3665,7 @@ Page Title
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url(../images/icons/bg-4.png);
+  background-image: url(../images/icons/bg-4.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -4366,7 +3892,7 @@ Banner Section
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url(../images/icons/bg-1.png);
+  background-image: url(../images/icons/bg-1.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -4863,7 +4389,7 @@ Banner Section
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url(../images/icons/bg-2.png);
+  background-image: url(../images/icons/bg-2.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -5313,7 +4839,7 @@ Banner Section Five
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url(../images/icons/bg-3.png);
+  background-image: url(../images/icons/bg-3.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -7404,7 +6930,7 @@ Job Detail Section
 
 .job-detail-section .upper-box {
   position: relative;
-  background-image: url(../images/icons/bg-4.png);
+  background-image: url(../images/icons/bg-4.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -7413,7 +6939,7 @@ Job Detail Section
 }
 
 .job-detail-section.style-three .upper-box {
-  background-image: url(../images/icons/bg-5.png);
+  background-image: url(../images/icons/bg-5.webp);
 }
 
 .job-detail-section .job-block-outer {
@@ -8336,7 +7862,7 @@ Testimonial Section
   width: 34px;
   right: 28px;
   top: 25px;
-  background-image: url(../images/icons/quote-icon.png);
+  background-image: url(../images/icons/quote-icon.webp);
   content: "";
   z-index: 2;
 }
@@ -8457,7 +7983,7 @@ Testimonial Section Two
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url(../images/icons/shape-2.png);
+  background-image: url(../images/icons/shape-2.webp);
   content: "";
   background-repeat: no-repeat;
   background-position: center;
@@ -8489,7 +8015,7 @@ Testimonial Section Two
   right: 50%;
   top: 0;
   margin-right: 60px;
-  background-image: url(../images/icons/quote-icon.png);
+  background-image: url(../images/icons/quote-icon.webp);
   content: "";
   z-index: 2;
 }
@@ -8786,7 +8312,7 @@ Testimonial Section Three
   right: 50%;
   top: 0;
   margin-right: 60px;
-  background-image: url(../images/icons/quote-icon.png);
+  background-image: url(../images/icons/quote-icon.webp);
   content: "";
   z-index: 2;
 }
@@ -9319,7 +8845,7 @@ Clients Section
 }
 .cta {
   padding: 55px 65px 200px 65px;
-  background-image: url(images/bg-cta1-home1.jpg);
+  background-image: url(images/bg-cta1-home1.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -9348,7 +8874,7 @@ Clients Section
 }
 
 .section-technology {
-  background-image: url(images/bg-card.png);
+  background-image: url(images/bg-card.webp);
   background-position: 0px 70px;
   background-repeat: no-repeat;
   padding: 120px 0px 200px 0px;
@@ -10836,7 +10362,7 @@ Candidate Detail Section
 
 .candidate-detail-section .upper-box {
   position: relative;
-  background-image: url(../images/icons/bg-4.png);
+  background-image: url(../images/icons/bg-4.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -15138,7 +14664,7 @@ App Section
   top: 0;
   right: -10px;
   height: 100%;
-  background-image: url(../images/icons/shape-1.png);
+  background-image: url(../images/icons/shape-1.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -15458,7 +14984,7 @@ Process Section
   margin: 0 auto;
   height: 113px;
   width: 105px;
-  background-image: url(../images/icons/shape-3.png);
+  background-image: url(../images/icons/shape-3.webp);
   z-index: -1;
   content: "";
 }
@@ -16042,68 +15568,6 @@ Subscribe Section Two
 /***
 
 ==================================================================
-Faqs Section
-==================================================================
-
-***/
-
-.faqs-section {
-  position: relative;
-  padding: 100px 0;
-}
-
-.faqs-section h3 {
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 35px;
-  color: #202124;
-  margin-bottom: 12px;
-}
-
-.faqs-section .accordion-box {
-  margin-bottom: 60px;
-}
-
-/***
-
-==================================================================
-TNC Section
-==================================================================
-
-***/
-
-.tnc-section {
-  position: relative;
-  padding: 100px 0 50px;
-}
-
-.tnc-section .auto-container {
-  max-width: 880px;
-}
-
-.tnc-section .text-box {
-  position: relative;
-  margin-bottom: 50px;
-}
-
-.tnc-section h3 {
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 35px;
-  color: #202124;
-  margin-bottom: 23px;
-}
-
-.tnc-section p {
-  font-size: 15px;
-  line-height: 24px;
-  color: #696969;
-  margin-bottom: 24px;
-}
-
-/***
-
-==================================================================
 Map Section
 ==================================================================
 
@@ -16429,199 +15893,6 @@ Login Section
 /***
 
 ==================================================================
-Invoice Section
-==================================================================
-
-***/
-
-.invoice-section {
-  position: relative;
-  background: #f0f5f7;
-  padding: 75px 0;
-  min-height: 100vh;
-}
-
-.invoice-section .auto-container {
-  max-width: 1200px;
-}
-
-.invoice-section .upper-box {
-  position: relative;
-  text-align: right;
-  margin-bottom: 75px;
-}
-
-.invoice-section .upper-box .theme-btn {
-  background: rgba(25, 103, 210, 0.15);
-  min-width: 140px;
-}
-
-.invoice-wrap {
-  position: relative;
-  background: #ffffff;
-  border: 1px solid #ecedf2;
-  -webkit-box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
-  box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
-  border-radius: 8px;
-}
-
-.invoice-wrap .invoice-content {
-  position: relative;
-  padding: 125px 100px;
-}
-
-.invoice-wrap .logo-box {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.invoice-wrap .logo-box .logo {
-  position: relative;
-  margin-right: 30px;
-  margin-bottom: 40px;
-}
-
-.invoice-wrap .invoice-id {
-  position: relative;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 35px;
-  color: #202124;
-  margin-bottom: 40px;
-  max-width: 325px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.invoice-wrap .invoice-id span {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  text-align: right;
-  min-width: 155px;
-  color: #202124;
-  margin-left: 40px;
-}
-
-.invoice-wrap .info-box {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.invoice-wrap .info-box .right-column {
-  position: relative;
-  max-width: 325px;
-  width: 100%;
-  padding-right: 30px;
-}
-
-.invoice-wrap .info-box .left-column {
-  padding-right: 30px;
-}
-
-.invoice-wrap .info {
-  position: relative;
-  margin-bottom: 70px;
-}
-
-.invoice-wrap .info h6 {
-  position: relative;
-  font-size: 15px;
-  line-height: 20px;
-  color: #696969;
-}
-
-.invoice-wrap .info span {
-  font-size: 15px;
-  line-height: 20px;
-  color: #202124;
-  font-weight: 500;
-}
-
-.invoice-wrap .info h4 {
-  position: relative;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  color: #202124;
-  margin-bottom: 20px;
-}
-
-.invoice-wrap .info h5 {
-  position: relative;
-  font-size: 15px;
-  line-height: 20px;
-  color: #202124;
-  margin-bottom: 14px;
-}
-
-.invoice-table tr th:last-child,
-.invoice-table tr td:last-child {
-  text-align: right;
-}
-
-.invoice-wrap .invoice-footer {
-  position: relative;
-  padding: 48px 50px 38px;
-  border-top: 1px solid #ecedf2;
-}
-
-.invoice-wrap .bottom-links {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.invoice-wrap .bottom-links li {
-  position: relative;
-  margin: 0 30px 10px;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-.invoice-wrap .bottom-links li a {
-  color: #202124;
-}
-
-.invoice-wrap .bottom-links li .link {
-  color: #1967d2;
-}
-
-/***
-
-==================================================================
 Main Footer
 ==================================================================
 
@@ -16941,7 +16212,7 @@ Main Footer
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../images/6.png);
+  background-image: url(../images/6.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
