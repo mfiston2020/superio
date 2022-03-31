@@ -36,6 +36,9 @@
 ::before {
   box-sizing: border-box;
 }
+.font-arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -7546,6 +7549,9 @@ button.bg-dark:hover {
 .my-4 {
   margin-bottom: 1.5rem !important;
 }
+.mb-7 {
+  margin-bottom: 1.9rem !important;
+}
 .ml-4,
 .mx-4 {
   margin-left: 1.5rem !important;
@@ -7628,6 +7634,12 @@ button.bg-dark:hover {
 .pl-2,
 .px-2 {
   padding-left: 0.5rem !important;
+}
+.pl-6 {
+  padding-left: 5rem !important;
+}
+.pr-6 {
+  padding-right: 5rem !important;
 }
 .p-3 {
   padding: 1rem !important;
@@ -9261,6 +9273,10 @@ button.bg-dark:hover {
 }
 .font-weight-light {
   font-weight: 300 !important;
+}
+.font-14 {
+  font-size: 14px;
+  font-weight: 300;
 }
 .font-weight-lighter {
   font-weight: lighter !important;

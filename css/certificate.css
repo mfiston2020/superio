@@ -1,0 +1,57 @@
+/* Font downloaded from FontsForWeb.com */
+.outer-border {
+  width: 650px;
+  padding: 50px;
+  text-align: center;
+  background-image: url("/images/resource/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+.inner-dotted-border {
+  width: 640px;
+  height: 740px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  left: -50px;
+}
+.inner-dotted-border h2 {
+  font-weight: 300;
+}
+
+.right-code {
+  border: 4px solid #30456e;
+  border-style: solid;
+  width: 60%;
+  height: 160px;
+}
+.left-img img {
+  border-bottom: 3px solid #1c787d;
+}
+.left-img .lead {
+  font-size: 14px;
+  width: 70%;
+  position: relative;
+  left: 49px;
+  top: 16px;
+}
+.certify {
+  font-size: 50px;
+  color: #30456e;
+  position: relative;
+  border: 0;
+  outline: 0;
+  font-family: "SCRIPTBL";
+}
+
+.certify::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 0.175rem;
+  background: #1c787d;
+  left: 105px;
+  bottom: -16px;
+}
