@@ -25,7 +25,7 @@
   border: 4px solid #30456e;
   border-style: solid;
   width: 60%;
-  height: 130px;
+  height: 160px;
 }
 .left-img img {
   border-bottom: 3px solid #1c787d;
@@ -54,4 +54,9 @@
   background: #1c787d;
   left: 105px;
   bottom: -16px;
+}
+.right-code {
+  background-image: url("../images/resource/BAR.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
