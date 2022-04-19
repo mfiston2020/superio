@@ -1,11 +1,12 @@
 /* Font downloaded from FontsForWeb.com */
 .outer-border {
-  width: 650px;
+  width: 980px;
+  height: 850px;
   padding: 50px;
   text-align: center;
-  background-image: url("../images/resource/bg.webp");
+  background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   margin: auto;
 }
 
@@ -15,7 +16,7 @@
   padding: 10px;
   text-align: center;
   position: relative;
-  left: -50px;
+  left: 100px;
 }
 .inner-dotted-border h2 {
   font-weight: 300;
@@ -25,7 +26,10 @@
   border: 4px solid #30456e;
   border-style: solid;
   width: 60%;
-  height: 160px;
+  height: 133px;
+  position: relative;
+  left: 630px;
+  bottom: 143px;
 }
 .left-img img {
   border-bottom: 3px solid #1c787d;
@@ -59,4 +63,22 @@
   background-image: url("../images/resource/BAR.webp");
   background-repeat: no-repeat;
   background-size: 100%;
+  float: left;
+}
+#partners {
+  position: relative;
+  left: -65px;
+}
+.new-content {
+  position: relative;
+  left: -40px;
+  width: 100%;
+  bottom: 20px;
+}
+.container-content {
+  width: 90%;
+}
+.bar-code {
+  width: 90%;
+  left: 200px;
 }
