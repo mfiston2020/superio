@@ -1,71 +1,24 @@
 /* Font downloaded from FontsForWeb.com */
 .outer-border {
-  width: 980px;
-  height: 850px;
-  padding: 50px;
-  text-align: center;
-  background-image: url("../images/bg-cer.webp");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: auto;
 }
 
 .inner-dotted-border {
-  width: 640px;
-  height: 740px;
-  padding: 10px;
-  text-align: center;
-  position: relative;
-  left: 120px;
 }
 .inner-dotted-border h2 {
-  font-weight: 300;
 }
 
 .right-code {
-  border: 4px solid #30456e;
-  border-style: solid;
-  width: 100%;
 }
 .left-img img {
-  border-bottom: 3px solid #1c787d;
 }
 .left-img .lead {
-  font-size: 14px;
-  width: 70%;
-  position: relative;
-  left: 49px;
-  top: 16px;
 }
 .certify {
-  font-size: 50px;
-  color: #30456e;
-  position: relative;
-  border: 0;
-  outline: 0;
-  font-family: "SCRIPTBL";
 }
 .wrapper .col-lg-6 {
-  margin-left: -50px;
 }
 .wrapper .col-md-6 {
-  margin-left: 50px;
-  position: relative;
-  left: 70px;
 }
-.certify::after {
-  content: "";
-  position: absolute;
-  width: 65%;
-  height: 0.175rem;
-  background: #1c787d;
-  left: 105px;
-  bottom: -16px;
-}
-.right-code {
-  background-image: url("../images/resource/BAR.webp");
-  background-repeat: no-repeat;
-  background-size: 100%;
 
-  height: 125px;
+.right-code {
 }

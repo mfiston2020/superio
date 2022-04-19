@@ -10,11 +10,44 @@
     <link rel="stylesheet" href="css/certificate.css" />
     <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon" />
     <link rel="icon" href="images/favicon.webp" type="image/x-icon" />
+    <style>
+      .certify::after {
+        content: "";
+        position: absolute;
+        width: 65%;
+        height: 0.175rem;
+        background: #1c787d;
+        left: 105px;
+        bottom: -16px;
+      }
+    </style>
   </head>
   <body>
     <div class="container font-arial p-5">
-      <div class="outer-border">
-        <div class="inner-dotted-border">
+      <div
+        class="outer-border"
+        style="
+          width: 980px;
+          height: 850px;
+          padding: 50px;
+          text-align: center;
+          background-image: url('./images/bg-cer.webp');
+          background-repeat: no-repeat;
+          background-size: 100%;
+          margin: auto;
+        "
+      >
+        <div
+          class="inner-dotted-border"
+          style="
+            width: 640px;
+            height: 740px;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            left: 120px;
+          "
+        >
           <div class="img-certificate mt-n4 mb-4">
             <img
               src="images/logo-black.webp"
@@ -23,13 +56,27 @@
               alt=""
             />
           </div>
-          <h2 class="font-weight-normal">Certificate of Participation</h2>
+          <h2 class="font-weight-normal" style="font-weight: 300">
+            Certificate of Participation
+          </h2>
 
           <p class="mb-5 font-weight-normal">
             This Certificate is presented to
           </p>
 
-          <h1 class="certify font-weight-bold">Clement Rugwiro</h1>
+          <h1
+            class="certify font-weight-bold"
+            style="
+              font-size: 50px;
+              color: #30456e;
+              position: relative;
+              border: 0;
+              outline: 0;
+              font-family: 'SCRIPTBL';
+            "
+          >
+            Clement Rugwiro
+          </h1>
 
           <p class="mt-5 pl-6 pr-6 wk font-14 font-weight-normal">
             to certify that they have successfully gone through the SOLVIT
@@ -40,18 +87,48 @@
             class="row mt-5 wrapper"
             style="margin-left: -70px; padding-left: 30px"
           >
-            <div class="col-lg-6">
+            <div class="col-lg-6" style="margin-left: -50px">
               <div class="left-img">
-                <img src="images/resource/signature.png" width="200" alt="" />
-                <p class="lead font-italic font-weight-bold">
+                <img
+                  src="images/resource/signature.png"
+                  width="200"
+                  alt=""
+                  style="border-bottom: 3px solid #1c787d"
+                />
+                <p
+                  class="lead font-italic font-weight-bold"
+                  style="
+                    font-size: 14px;
+                    width: 70%;
+                    position: relative;
+                    left: 49px;
+                    top: 16px;
+                  "
+                >
                   Joseph Semafara, CEO SOLVIT AFRICA
                 </p>
               </div>
             </div>
 
-            <div class="col-md-6">
+            <div
+              class="col-md-6"
+              style="margin-left: 50px; position: relative; left: 70px"
+            >
               <div class="col-md-6">
-                <div class="right-code"></div>
+                <div
+                  class="right-code"
+                  style="
+                    background-image: url('./images/resource/BAR.webp');
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    border: 4px solid #30456e;
+                    border-style: solid;
+                    width: 100%;
+                    height: 125px;
+                    position: relative;
+                    left: 120px;
+                  "
+                ></div>
               </div>
             </div>
           </div>
