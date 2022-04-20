@@ -162,7 +162,7 @@
   }
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1266px) {
   .main-header .outer-box .upload-cv {
     margin-right: 0;
   }
@@ -218,8 +218,9 @@
   .banner-section-three .content-column h3,
   .banner-section-two .content-column h3,
   .banner-section .content-column h3 {
-    font-size: 60px;
+    font-size: 40px;
     line-height: 1.2em;
+    float: left;
     margin-bottom: 20px;
     text-align: center;
   }
